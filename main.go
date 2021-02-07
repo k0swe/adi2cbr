@@ -91,7 +91,7 @@ func outputCabrillo(totalScore int, records []adifparser.ADIFRecord) {
 		}
 		qsoDate = qsoDate[0:4] + "-" + qsoDate[4:6] + "-" + qsoDate[6:8]
 		timeOn = timeOn[0:4]
-		fmt.Printf("QSO: %d %v %v %v K0SWE 1O CO %v %v %v\n",
+		fmt.Printf("QSO: %6d %-2v %v %v K0SWE 1O CO %-6v %-3v %-3v\n",
 			int(freq), mode, qsoDate, timeOn, call, class, arrlSect)
 	}
 	fmt.Println("END-OF-LOG:")
